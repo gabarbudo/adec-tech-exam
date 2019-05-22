@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Options } from 'ng5-slider';
 
 @Component({
   selector: 'app-root',

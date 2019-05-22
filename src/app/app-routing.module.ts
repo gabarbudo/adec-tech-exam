@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { CityProfilesComponent }      from './city-profiles/city-profiles.component';
+
+const routes: Routes = [
+	{ path: '', redirectTo: '/city-profiles', pathMatch: 'full' },
+	{ path: 'city-profiles', component: CityProfilesComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

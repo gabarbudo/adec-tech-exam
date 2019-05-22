@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+.mat-toolbar {
+	background: #fff;
+	color: #212121;
+}
+
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+	box-shadow: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0); 
+}
+
+.mat-fab.mat-primary, .mat-flat-button.mat-primary, .mat-mini-fab.mat-primary, .mat-raised-button.mat-primary {
+    background-color: #fef035;
+    color: #333333;
+}
+
+.mat-drawer-container {
+    background-color: #364959;
+    padding: 50px 0;
+    text-align: center;
+    margin: 0 -9px;
+}
+
+.mat-drawer, .mat-expansion-panel {
+    background-color: #333333;
+}
+
+.mat-expansion-panel-header-title:hover {
+	color: #73bee6;
+}
+
+.custom-slider .ng5-slider .ng5-slider-bar {
+	background: #ffe4d1;
+	height: 2px;
+}
+
+.custom-slider .ng5-slider .ng5-slider-selection {
+	background: orange;
+}
+
+.custom-slider .ng5-slider .ng5-slider-pointer {
+	width: 8px;
+	height: 16px;
+	top: auto; /* to remove the default positioning */
+	bottom: 0;
+	background-color: #333;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.custom-slider .ng5-slider .ng5-slider-pointer:after {
+	display: none;
+}
+
+.custom-slider .ng5-slider .ng5-slider-bubble {
+	bottom: 14px;
+	color: #fff;
+	font-size: 12px;
+}
+
+.custom-slider .ng5-slider .ng5-slider-tick {
+	width: 1px;
+	height: 10px;
+	margin-left: 4px;
+	border-radius: 0;
+	background: #ffe4d1;
+	top: -1px;
+}
+
+.custom-slider .ng5-slider .ng5-slider-tick.ng5-slider-selected {
+	background: orange;
+}

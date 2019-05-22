@@ -1,0 +1,94 @@
+<mat-sidenav-container class="example-container">
+	<mat-sidenav #sidenav opened mode="side">
+		<mat-toolbar>
+			<span><h2>FILTER</h2></span>
+			<span> </span>
+			<span class="space-filler"></span>
+			<span>
+				<button mat-icon-button>
+					<mat-icon aria-label="Filter" class="material-icons" (click)="toggleButton(sidenav)">tune</mat-icon>
+				</button>
+			</span>
+		</mat-toolbar>
+		
+
+		<mat-accordion displayMode="flat">
+			<mat-expansion-panel>
+				<mat-expansion-panel-header>
+					<mat-panel-title>
+						CITIES/MUNICIPALITIES
+					</mat-panel-title>
+				</mat-expansion-panel-header>
+				There's nothing here yet.
+			</mat-expansion-panel>
+
+			<mat-expansion-panel>
+				<mat-expansion-panel-header>
+					<mat-panel-title>
+						TALENT
+					</mat-panel-title>
+				</mat-expansion-panel-header>
+				<p>Population</p>
+				<div class="custom-slider">
+					<ng5-slider [(value)]="populationValue" [(highValue)]="populationHighValue" [options]="options"></ng5-slider>
+				</div>
+				
+				<p>Total Graduates</p>
+				<div class="custom-slider">
+					<ng5-slider [(value)]="totalgradValue" [(highValue)]="totalgradHighValue" [options]="options"></ng5-slider>
+				</div>
+
+				<p>No. of CoEs and CoDs</p>
+				<div class="custom-slider">
+					<ng5-slider [(value)]="coecodValue" [(highValue)]="coecodHighValue" [options]="options"></ng5-slider>
+				</div>
+
+				<p>Programming Talent</p>
+				<div class="custom-slider">
+					<ng5-slider [(value)]="progtalentValue" [(highValue)]="progtalentHighValue" [options]="options"></ng5-slider>
+				</div>
+
+				<p>Higher Education Institutions</p>
+				<div class="custom-slider">
+					<ng5-slider [(value)]="heiValue" [(highValue)]="heiHighValue" [options]="options"></ng5-slider>
+				</div>
+
+				<p>FTEs employed in IT-BPM</p>
+				<div class="custom-slider">
+					<ng5-slider [(value)]="fteValue" [(highValue)]="fteHighValue" [options]="options"></ng5-slider>
+				</div>
+				<div style="text-align:center">
+					<button mat-flat-button color="primary">FILTER</button>
+					<button mat-flat-button>RESET</button>
+				</div>
+			</mat-expansion-panel>
+
+			<mat-expansion-panel>
+				<mat-expansion-panel-header>
+					<mat-panel-title>
+						INFRASTRUCTURE
+					</mat-panel-title>
+				</mat-expansion-panel-header>
+				There's nothing here yet.
+			</mat-expansion-panel>
+
+			<mat-expansion-panel>
+				<mat-expansion-panel-header>
+					<mat-panel-title>
+						TOP 10 CITIES
+					</mat-panel-title>
+				</mat-expansion-panel-header>
+				There's nothing here yet.
+			</mat-expansion-panel>
+		</mat-accordion>
+
+	</mat-sidenav>
+	<mat-sidenav opened mode="side" position="end">Right content</mat-sidenav>
+	<p *ngIf="showToggle">
+		<button mat-icon-button>
+			<mat-icon aria-label="Filter" class="material-icons" (click)="toggleButton(sidenav)">tune</mat-icon>
+		</button>
+	</p>
+
+	<img width="75%" src="../assets/ph-map.svg">
+</mat-sidenav-container>
