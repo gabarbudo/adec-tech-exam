@@ -1,1 +1,0 @@
-# adec-tech-exam
