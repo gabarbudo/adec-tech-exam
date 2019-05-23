@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+
+html, body {
+    height:100%;
+}
+
 .mat-toolbar {
 	background: #fff;
 	color: #212121;
@@ -16,7 +21,7 @@
 
 .mat-drawer-container {
     background-color: #364959;
-    padding: 50px 0;
+    /*padding: 50px 0;*/
     text-align: center;
     margin: 0 -9px;
 }
@@ -27,6 +32,10 @@
 
 .mat-expansion-panel-header-title:hover {
 	color: #73bee6;
+}
+
+.mat-list-base .mat-list-item .mat-list-item-content {
+	padding: 0;
 }
 
 .custom-slider .ng5-slider .ng5-slider-bar {

@@ -8,6 +8,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatTableModule} from '@angular/material/table';
+import {MatListModule} from '@angular/material/list';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,6 +32,10 @@ import { CityProfilesComponent } from './city-profiles/city-profiles.component';
     MatSidenavModule,
     MatIconModule,
     MatExpansionModule,
+    MatGridListModule,
+    MatTableModule,
+    MatListModule,
+    MatTooltipModule,
     AppRoutingModule
   ],
   providers: [],

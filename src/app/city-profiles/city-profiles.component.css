@@ -15,3 +15,53 @@
 .mat-accordion .mat-expansion-panel:first-of-type, .mat-accordion .mat-expansion-panel:last-of-type {
     border-radius: 0;
 }
+
+.mat-elevation-z8 {
+    box-shadow: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0);
+}
+
+.mat-list-item {
+	color: #77838e;
+}
+
+.toggle-container {
+    height: max-content;
+    width: max-content;
+	background-color: #333333;
+	padding: 5px;
+}
+
+.list-provinces {
+	height: -webkit-fill-available;
+	max-width: max-content;
+	background-color: #ffffff;
+	display: block;
+}
+
+.mat-grid-tile {
+    position: static;
+}
+
+.mat-grid-tile .mat-figure {
+	display: block;
+}
+
+.province-id {
+	padding-right: 5px;
+}
+
+.rightnav {
+	max-width: 500px;
+	background-color: #f2f2f2;
+}
+
+.rightnav mat-toolbar {
+	background-color: #1072b8;
+}
+
+.rightnav p {
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align: justify;
+	color: #77838e;
+}
