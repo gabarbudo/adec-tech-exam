@@ -1,10 +1,15 @@
+mat-list {
+	height: -webkit-fill-available;
+	overflow: auto;
+}
+
 .space-filler {
 	flex: 1 1 auto;
 }
 
 .space-filler .mat-toolbar-row, .mat-toolbar-single-row {
 	background-color: #3c3c3c;
-	height: 50px;
+	height: 40px;
 	color: #ffff;
 }
 
@@ -14,6 +19,11 @@
 
 .mat-accordion .mat-expansion-panel:first-of-type, .mat-accordion .mat-expansion-panel:last-of-type {
     border-radius: 0;
+}
+
+.mat-expansion-panel-header {
+	font-family:"Open Sans Bold","Helvetica Neue",sans-serif;
+	font-size: 14px;
 }
 
 .mat-elevation-z8 {
@@ -32,7 +42,6 @@
 }
 
 .list-provinces {
-	height: -webkit-fill-available;
 	max-width: max-content;
 	background-color: #ffffff;
 	display: block;
@@ -47,21 +56,87 @@
 }
 
 .province-id {
-	padding-right: 5px;
+	width: 15px;
+	margin-right: 10px;
+	margin-left: -10px;
+	padding: 10px;
+	color: #ffff;
 }
 
 .rightnav {
-	max-width: 500px;
+	min-width: 500px;
+	max-width: 40%;
 	background-color: #f2f2f2;
+}
+
+.rightnav h2 {
+	font-size: 24px;
 }
 
 .rightnav mat-toolbar {
 	background-color: #1072b8;
+	height: 50px;
 }
 
 .rightnav p {
 	padding-left: 40px;
 	padding-right: 40px;
-	text-align: justify;
+	text-align: left;
 	color: #77838e;
+}
+
+.list-provinces mat-toolbar {
+	background-color: #969696;
+}
+
+.owl-carousel {
+  width: 90% !important;
+  margin: 10% auto;
+}
+ 
+.owl-carousel .owl-nav {
+  overflow: hidden;
+  height: 0px;
+}
+ 
+.owl-carousel .nav-btn {
+  height: 47px;
+  position: absolute;
+  width: 26px;
+  cursor: pointer;
+  top: 30% !important;
+}
+ 
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
+ 
+.owl-carousel .prev-slide {
+  background: url(right-arrow.svg) no-repeat scroll 0 0;
+  left: -33px;
+}
+ 
+.owl-carousel .next-slide {
+  background: url(right-arrow.svg) no-repeat scroll -24px 0px;
+  right: -33px;
+}
+ 
+.owl-carousel .prev-slide:hover {
+  background-position: 0px -53px;
+}
+ 
+.owl-carousel .next-slide:hover {
+  background-position: -24px -53px;
+}
+
+.details {
+	text-align: left;
+	margin: 40px;
+}
+
+.details img {
+	margin-right: 10px;
+	margin-bottom: 20px;
 }

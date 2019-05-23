@@ -1,8 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
 
-html, body {
-    height:100%;
+@font-face {
+  font-family: "Oswald Light";
+  src: url(assets/fonts/Oswald-Light.ttf);
+}
+
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url(assets/fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url(assets/fonts/OpenSans-Bold.ttf);
+}
+
+p {
+	font-size: 14px;
+	font-family:"Open Sans Regular","Helvetica Neue",sans-serif;
+}
+
+.mat-toolbar, .mat-toolbar h1, .mat-toolbar h2, .mat-toolbar h3, .mat-toolbar h4, .mat-toolbar h5, .mat-toolbar h6 {
+    font-family: "Oswald Light","Helvetica Neue",sans-serif;
+    font-size: 14px;
+}
+
+.mat-badge-content {
+	font-weight: 600;
+	font-size: 12px;
+	font-family:"Open Sans Regular","Helvetica Neue",sans-serif;
+}
+
+.mat-badge-small .mat-badge-content{
+	font-size:6px
 }
 
 .mat-toolbar {

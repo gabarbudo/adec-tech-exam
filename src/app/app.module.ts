@@ -12,6 +12,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatTableModule} from '@angular/material/table';
 import {MatListModule} from '@angular/material/list';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { OwlModule } from 'ngx-owl-carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -36,6 +37,7 @@ import { CityProfilesComponent } from './city-profiles/city-profiles.component';
     MatTableModule,
     MatListModule,
     MatTooltipModule,
+    OwlModule,
     AppRoutingModule
   ],
   providers: [],

@@ -1,12 +1,21 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<mat-toolbar>
+<mat-toolbar class="navibar">
   <span><img src="../assets/logo.svg" width="150px"></span>
   <button mat-button>ABOUT</button>
   <button mat-button>CITY PROFILES</button>
   <button mat-button>MEDIA & EVENTS</button>
   <button mat-button>SERVICES</button>
   <span class="space-filler"></span>
-  <span>f t in</span>
+  <a href="https://www.facebook.com"><img src="../assets/facebook-logo.png" height="15px"></a>
+  <a href="https://www.twitter.com"><img src="../assets/twitter-logo.png" height="15px"></a>
+  <a href="https://www.linkedin.com"><img src="../assets/linkedin-logo.png" height="15px"></a>
+  <div class="contact"><i class="material-icons">call</i></div>
 </mat-toolbar>
 
 <router-outlet></router-outlet>
+
+<mat-toolbar class="footer">
+  <span class="space-filler"></span>
+  <p>© digitalcitiesPH, 2017. All rights reserved.</p>
+  <span class="space-filler"></span>
+</mat-toolbar>

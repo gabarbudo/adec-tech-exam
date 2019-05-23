@@ -1,3 +1,27 @@
+button {
+	font-family:"Open Sans Regular","Helvetica Neue",sans-serif;
+	font-size: 14px;
+}
+
 .space-filler {
   flex: 1 1 auto;
+}
+
+.navibar img {
+	margin-right: 20px;
+}
+
+.contact {
+	background-color: #fef035;
+	padding: 20px;
+	margin-right: -25px;
+	margin-top: -10px;
+}
+
+.footer {
+	margin: 0 -8px -5px -8px;
+	padding: 10px;
+	width: -webkit-fill-available;
+	background-color: #444444;
+	color: #ffffff;
 }

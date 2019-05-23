@@ -95,23 +95,47 @@
 			</span>
 		</mat-toolbar>
 
+		<div style="margin: 25px;">
+			<owl-carousel [options]="carouselOptions" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+			    <div class="item" *ngFor="let image of images">
+			      <img class="slide-image" src="{{image}}" >
+			      <div class="slide-text">
+			        <h4>{{image.text}}</h4>
+			      </div>
+			    </div>
+			  </owl-carousel>
+		</div>
+		
+
+		<!-- <img [src]="image" width="100%"> -->
 		<p>
 			{{ description }}
 		</p>
+
+		<div class="details">
+			<img src="assets/talent.png">
+			<img src="assets/infra.png">
+		</div>
+		
+
+		<!-- <mat-grid-list cols="4" rowHeight="200px">
+		  <mat-grid-tile colspan="3" rowspan="1"><img src="assets/talent.png"></mat-grid-tile>
+		  <mat-grid-tile colspan="1" rowspan="2"><img src="assets/map-cebu.png"></mat-grid-tile>
+		  <mat-grid-tile colspan="3" rowspan="1"><img src="assets/infra.png"></mat-grid-tile>
+		</mat-grid-list> -->
 	</mat-sidenav>
-
-	<div class="toggle-container" *ngIf="showToggle">
-		<button mat-icon-button>
-			<mat-icon aria-label="Filter" class="material-icons" (click)="toggleButton(sidenav)">tune</mat-icon>
-		</button>
-	</div>
-
 
 	<div style="display:flex;">
 		<div class="list-provinces">
-			<mat-list>
+			<mat-toolbar>
+				<button mat-icon-button *ngIf="showToggle">
+					<mat-icon aria-label="Filter" class="material-icons" (click)="toggleButton(sidenav)">tune</mat-icon>
+				</button>
+				<span><h2>PROVINCE</h2></span>
+			</mat-toolbar>
+			<mat-list dense>
 				<mat-list-item *ngFor="let data of finalData"> 
-					<span class="province-id">{{data.id}}</span> 
+					<div class="province-id" [style.background-color]="data.color">{{data.id}}</div> 
 					<button mat-button [matTooltip]="data.name" matTooltipPosition="right"(click)="getProvince(data, rightnav)">{{data.key}}</button>
 				</mat-list-item>
 			</mat-list>
