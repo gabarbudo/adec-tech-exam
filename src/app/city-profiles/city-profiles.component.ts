@@ -188,28 +188,29 @@ const ELEMENT_DATA: Province[] = [
 })
 
 export class CityProfilesComponent implements OnInit {
-	populationValue: number = 100;
-	populationHighValue: number = 1000;
+	populationValue: number = 0;
+	populationHighValue: number = 1000000;
 
-	totalgradValue: number = 100;
-	totalgradHighValue: number = 1000;
+	totalgradValue: number = 0;
+	totalgradHighValue: number = 1000000;
 
-	coecodValue: number = 100;
-	coecodHighValue: number = 1000;
+	coecodValue: number = 0;
+	coecodHighValue: number = 1000000;
 
-	progtalentValue: number = 100;
-	progtalentHighValue: number = 1000;
+	progtalentValue: number = 0;
+	progtalentHighValue: number = 1000000;
 
-	heiValue: number = 100;
-	heiHighValue: number = 1000;
+	heiValue: number = 0;
+	heiHighValue: number = 1000000;
 
-	fteValue: number = 100;
-	fteHighValue: number = 1000;
+	fteValue: number = 0;
+	fteHighValue: number = 1000000;
 
 	options: Options = {
-		floor: 50,
+		floor: 0,
 		ceil: 1000000,
 		noSwitching: true,
+		step: 5,
 		translate: (value: number): string => {
 			if (value == 1000000) {
 				return '1M';
@@ -221,8 +222,6 @@ export class CityProfilesComponent implements OnInit {
 
 	carouselOptions = {
 	    margin: 10,
-	    // nav: true,
-	    // navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"],
 	    responsiveClass: true,
 	    responsive: {
 	      0: {
@@ -269,11 +268,11 @@ export class CityProfilesComponent implements OnInit {
 	applyFilter() {
 		this.finalData = [];
 		for (var i = 0; i <= this.dataSource.length - 1; i++) {
-			if(this.dataSource[i].population >= this.populationValue && this.dataSource[i].population <= this.populationHighValue ||
-				this.dataSource[i].total_grads >= this.totalgradValue && this.dataSource[i].total_grads <= this.totalgradHighValue ||
-				this.dataSource[i].coe_cod >= this.coecodValue && this.dataSource[i].coe_cod <= this.coecodHighValue ||
-				this.dataSource[i].prog_talent >= this.progtalentValue && this.dataSource[i].prog_talent <= this.progtalentHighValue ||
-				this.dataSource[i].hei >= this.heiValue && this.dataSource[i].hei <= this.heiHighValue ||
+			if(this.dataSource[i].population >= this.populationValue && this.dataSource[i].population <= this.populationHighValue &&
+				this.dataSource[i].total_grads >= this.totalgradValue && this.dataSource[i].total_grads <= this.totalgradHighValue &&
+				this.dataSource[i].coe_cod >= this.coecodValue && this.dataSource[i].coe_cod <= this.coecodHighValue &&
+				this.dataSource[i].prog_talent >= this.progtalentValue && this.dataSource[i].prog_talent <= this.progtalentHighValue &&
+				this.dataSource[i].hei >= this.heiValue && this.dataSource[i].hei <= this.heiHighValue &&
 				this.dataSource[i].fte >= this.fteValue && this.dataSource[i].fte <= this.fteHighValue
 				) {
 				this.finalData.push(this.dataSource[i])
@@ -282,29 +281,29 @@ export class CityProfilesComponent implements OnInit {
 	}
 
 	reset() {
-		this.populationValue = 100;
-		this.populationHighValue = 1000;
+		this.populationValue = 0;
+		this.populationHighValue = 1000000;
 
-		this.totalgradValue = 100;
-		this.totalgradHighValue = 1000;
+		this.totalgradValue = 0;
+		this.totalgradHighValue = 1000000;
 
-		this.coecodValue = 100;
-		this.coecodHighValue = 1000;
+		this.coecodValue = 0;
+		this.coecodHighValue = 1000000;
 
-		this.progtalentValue = 100;
-		this.progtalentHighValue = 1000;
+		this.progtalentValue = 0;
+		this.progtalentHighValue = 1000000;
 
-		this.heiValue = 100;
-		this.heiHighValue = 1000;
+		this.heiValue = 0;
+		this.heiHighValue = 1000000;
 
-		this.fteValue = 100;
-		this.fteHighValue = 1000;
+		this.fteValue = 0;
+		this.fteHighValue = 1000000;
 
 		this.finalData = this.dataSource;
 	}
 
 	constructor() {
-
+		
 	}
 
 	ngOnInit() {

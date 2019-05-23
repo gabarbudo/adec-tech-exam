@@ -85,6 +85,17 @@ mat-list {
 	color: #77838e;
 }
 
+.action-buttons {
+	text-align:center;
+}
+
+.action-buttons .mat-flat-button {
+	margin-left: 5px;
+	margin-right: 5px;
+	font-family: "Oswald Light","Helvetica Neue",sans-serif;
+    font-size: 14px;
+}
+
 .list-provinces mat-toolbar {
 	background-color: #969696;
 }

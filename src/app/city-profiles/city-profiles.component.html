@@ -28,36 +28,36 @@
 						TALENT
 					</mat-panel-title>
 				</mat-expansion-panel-header>
-				<p>Population</p>
+				<span>Population</span>
 				<div class="custom-slider">
 					<ng5-slider [(value)]="populationValue" [(highValue)]="populationHighValue" [options]="options"></ng5-slider>
 				</div>
 				
-				<p>Total Graduates</p>
+				<span>Total Graduates</span>
 				<div class="custom-slider">
 					<ng5-slider [(value)]="totalgradValue" [(highValue)]="totalgradHighValue" [options]="options"></ng5-slider>
 				</div>
 
-				<p>No. of CoEs and CoDs</p>
+				<span>No. of CoEs and CoDs</span>
 				<div class="custom-slider">
 					<ng5-slider [(value)]="coecodValue" [(highValue)]="coecodHighValue" [options]="options"></ng5-slider>
 				</div>
 
-				<p>Programming Talent</p>
+				<span>Programming Talent</span>
 				<div class="custom-slider">
 					<ng5-slider [(value)]="progtalentValue" [(highValue)]="progtalentHighValue" [options]="options"></ng5-slider>
 				</div>
 
-				<p>Higher Education Institutions</p>
+				<span>Higher Education Institutions</span>
 				<div class="custom-slider">
 					<ng5-slider [(value)]="heiValue" [(highValue)]="heiHighValue" [options]="options"></ng5-slider>
 				</div>
 
-				<p>FTEs employed in IT-BPM</p>
+				<span>FTEs employed in IT-BPM</span>
 				<div class="custom-slider">
 					<ng5-slider [(value)]="fteValue" [(highValue)]="fteHighValue" [options]="options"></ng5-slider>
 				</div>
-				<div style="text-align:center">
+				<div class="action-buttons">
 					<button mat-flat-button color="primary" (click)="applyFilter()">FILTER</button>
 					<button mat-flat-button (click)="reset()">RESET</button>
 				</div>
@@ -116,13 +116,6 @@
 			<img src="assets/talent.png">
 			<img src="assets/infra.png">
 		</div>
-		
-
-		<!-- <mat-grid-list cols="4" rowHeight="200px">
-		  <mat-grid-tile colspan="3" rowspan="1"><img src="assets/talent.png"></mat-grid-tile>
-		  <mat-grid-tile colspan="1" rowspan="2"><img src="assets/map-cebu.png"></mat-grid-tile>
-		  <mat-grid-tile colspan="3" rowspan="1"><img src="assets/infra.png"></mat-grid-tile>
-		</mat-grid-list> -->
 	</mat-sidenav>
 
 	<div style="display:flex;">

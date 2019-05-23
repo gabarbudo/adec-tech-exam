@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<mat-toolbar class="navibar">
+<mat-toolbar class="navibar" *ngIf="!mobileQuery.matches">
   <span><img src="../assets/logo.svg" width="150px"></span>
   <button mat-button>ABOUT</button>
   <button mat-button>CITY PROFILES</button>
@@ -11,6 +11,26 @@
   <a href="https://www.linkedin.com"><img src="../assets/linkedin-logo.png" height="15px"></a>
   <div class="contact"><i class="material-icons">call</i></div>
 </mat-toolbar>
+
+<mat-toolbar class="navibar" *ngIf="mobileQuery.matches">
+  <span><img src="../assets/logo.svg" width="150px"></span>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>ABOUT</button>
+    <button mat-menu-item>CITY PROFILES</button>
+    <button mat-menu-item>MEDIA & EVENTS</button>
+    <button mat-menu-item>SERVICES</button>
+  </mat-menu>
+  <span class="space-filler"></span>
+  <a href="https://www.facebook.com"><img src="../assets/facebook-logo.png" height="15px"></a>
+  <a href="https://www.twitter.com"><img src="../assets/twitter-logo.png" height="15px"></a>
+  <a href="https://www.linkedin.com"><img src="../assets/linkedin-logo.png" height="15px"></a>
+  <div class="contact"><i class="material-icons">call</i></div>
+</mat-toolbar>
+
+
 
 <router-outlet></router-outlet>
 

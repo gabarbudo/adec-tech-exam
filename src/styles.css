@@ -52,7 +52,6 @@ p {
 
 .mat-drawer-container {
     background-color: #364959;
-    /*padding: 50px 0;*/
     text-align: center;
     margin: 0 -9px;
 }
@@ -70,22 +69,21 @@ p {
 }
 
 .custom-slider .ng5-slider .ng5-slider-bar {
-	background: #ffe4d1;
+	background: #e3e2e2;
 	height: 2px;
 }
 
 .custom-slider .ng5-slider .ng5-slider-selection {
-	background: orange;
+	background: #3d79a0;
 }
 
 .custom-slider .ng5-slider .ng5-slider-pointer {
 	width: 8px;
 	height: 16px;
-	top: auto; /* to remove the default positioning */
-	bottom: 0;
-	background-color: #333;
-	border-top-left-radius: 3px;
-	border-top-right-radius: 3px;
+	top: -8px; /* to remove the default positioning */
+	bottom: -8px;
+	background-color: #e0e0e0;
+	border-radius: 3px;
 }
 
 .custom-slider .ng5-slider .ng5-slider-pointer:after {
@@ -96,17 +94,4 @@ p {
 	bottom: 14px;
 	color: #fff;
 	font-size: 12px;
-}
-
-.custom-slider .ng5-slider .ng5-slider-tick {
-	width: 1px;
-	height: 10px;
-	margin-left: 4px;
-	border-radius: 0;
-	background: #ffe4d1;
-	top: -1px;
-}
-
-.custom-slider .ng5-slider .ng5-slider-tick.ng5-slider-selected {
-	background: orange;
 }
